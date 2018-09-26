@@ -1,0 +1,249 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
+}
+header{
+background: #1c1c1c;
+ }
+
+.navbar ul{
+	justify-content: center;
+	flex-grow: 1;
+	margin: none;
+}
+
+.navbar li:hover{
+	font-size: 23px;
+	cursor: pointer;
+	position: relative;
+	transition: .6s;
+	margin: none;
+	border: none;
+}
+
+.navbar li a {
+	display: block;
+	color: #5dc21e;
+	margin-left: 10px;
+	text-decoration: none; 
+}
+
+
+.footer-bs {
+	color: #5dc21e;
+    background-color: #1c1c1c;
+	padding: 60px 40px;
+}
+
+.foote{
+	background-color: #5dc21e;
+}
+
+.footer-bs .footer-nav h4{
+	font-size: 21px;
+	margin-top: 30px;
+	color: #5dc21e;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.footer-bs .footer-nav ul.list{ 
+	list-style:none; padding:0px; 
+}
+
+.footer-bs .footer-nav ul.list li{ 
+	padding:4px;
+}
+
+.footer-bs .footer-nav ul.list a{ 
+	color:rgba(255,255,255,0.80); 
+}
+
+.footer-bs .footer-nav ul.list a:hover{ 
+	color:rgba(255,255,255,0.60); text-decoration:none; 
+}
+
+.footer-bs .footer-social ul{ 
+	list-style:none; padding:0px;
+}
+
+.footer-bs .footer-social h4{
+	font-size: 21px;
+	margin-top: 30px;
+	color: #5dc21e;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.footer-bs .footer-social li{ 
+	padding:4px;
+}
+.footer-bs .footer-social a{ 
+	color:rgba(255,255,255,0.80); 
+}
+
+.footer-bs .footer-social a:hover{ 
+	color:rgba(255,255,255,0.60); text-decoration:none; 
+}
+
+.juego{
+	margin-top: 40px;
+	margin-bottom: 40px;
+/*	margin-left: 60px;*/
+}
+
+.descripcion{
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+.descripcion h4{
+	font-size: 40px;
+	margin-bottom: 20px;
+
+}
+
+.descripcion p{
+	font-size: 20px;
+	color: #1c1c1c;
+}
+
+.ren{
+/*	width: 100%;*/
+	background-color: #c1c1c1;
+	box-shadow:inset 0 0 20px #1c1c1c;
+	padding: 50px;
+}
+
+.boton2{
+	border-radius:5px;
+	background-color:rgba(0,0,0, .2) ;
+	color: #1c1c1c;
+	border: 1px solid #1c1c1c; 
+	padding: 5px 50px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	margin-top: 10px;
+}
+
+
+.boton2:hover{
+	background-color:rgba(93,194,30, .2) ;
+	transition: .2s;
+}
+
+figure.effect-oscar figcaption {
+  padding: 3em;
+  background-color: rgba(58,52,42,0.7);
+  -webkit-transition: background-color 0.35s;
+  transition: background-color 0.35s;
+}
+
+figure.effect-oscar figcaption::before {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  bottom: 30px;
+  left: 30px;
+  border: 1px solid #fff;
+  content: '';
+}
+
+figure.effect-oscar h2 {
+  margin: 20% 0 10px 0;
+  transition: transform 0.35s;
+  transform: translate3d(0,100%,0);
+}
+
+figure.effect-oscar figcaption::before,
+figure.effect-oscar p {
+    transition: opacity 0.35s, transform 0.35s;
+    transform: scale(0);
+}
+
+figure.effect-oscar:hover h2 {
+  transform: translate3d(0,0,0);
+}
+
+figure.effect-oscar:hover figcaption::before,
+figure.effect-oscar:hover p {
+  opacity: 1;
+  transform: scale(1);
+}
+
+figure.effect-oscar:hover figcaption {
+  background-color: rgba(58,52,42,0);
+}
+
+figure.effect-oscar:hover img {
+  opacity: 0.4;
+}
+
+.grid figure {
+  position: relative;
+  min-width: 300px;
+  max-width: 326px;
+
+  background: #3085a3;
+  text-align: center;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.grid figure figcaption > a {
+  opacity: 0;
+}
+
+.grid figure h2 {
+  font-weight: 300;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+
+.destacados{
+	padding: 50px;
+}
+.cont{
+	margin-bottom: 50px;
+}
+
+.imgs{
+	height: 550px;
+	width: 100%
+}
+.cone{
+	margin-bottom: 50px;
+ }

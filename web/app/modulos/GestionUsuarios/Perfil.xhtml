@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Administrador</title>
+  <link rel="stylesheet" type="text/css" href="../luiiisa/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../Ventas/css/table.css">
+  <link rel="stylesheet" href="../Ventas/css/sweetalert.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header id="menu1">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <img src="../Ventas/images/logo.png" class="rounded mx-auto d-block img-fluid" alt="Responsive image"></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="Inicio_Administrador.html">volver al inicio</a>
+            <li class="nav-item ">
+                <a class="nav-link" href="Pedidos.html">Pedidos</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="Mantenimiento.html">Mantenimiento</a>
+                
+              </li>
+          <li class="nav-item ">
+                <a class="nav-link" href="factura_Pedido.html">Facturas</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="Usuarios.html">Usuarios</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="Producto.html">Inventario</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="proveedoress.html">Proveedores</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../acerca de nosotros.html">Graficas</a>
+          
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+<div class="container" style="padding-top: 60px;">
+  <h1 class="page-header">Editar Perfil</h1>
+  <div class="row">
+    <!-- left column -->
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <div class="text-center">
+        <img src="../Ventas/images/ded53399d2fdc4e35bc5d9b43fdc9b51.jpg" class="avatar img-circle img-thumbnail" alt="avatar">
+        <h6>Cambiar imagen:</h6>
+        <input type="file" >
+      </div>
+    </div>
+    <!-- edit form column -->
+    <div class="col-md-8 col-sm-6 col-xs-12 personal-info">
+      <h3>Información personal</h3>
+      <form class="form-horizontal" role="form">
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Nombre:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="John" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Apellido:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="Zuruaga" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Email:</label>
+          <div class="col-lg-8">
+            <input class="form-control" value="john124@gmail.com" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-lg-3 control-label">Ciudad:</label>
+          <div class="col-lg-8">
+            <div class="ui-select">
+              <select id="user_time_zone" class="form-control">
+                <option value="">Bogotá D.C</option>
+                <option value="">Medellin</option>
+                <option value="">Cali</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Username:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="JohnZ" type="text">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Contraseña:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="11111122333" type="Contraseña:">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label">Confirmar contraseña:</label>
+          <div class="col-md-8">
+            <input class="form-control" value="11111122333" type="password">
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="col-md-3 control-label"></label>
+          <div class="col-md-8">
+            <input class="btn btn-outline-success" value="Guardar cambios" type="button">
+            <span></span>
+            <input class="btn btn-outline-danger" value="Cancelar" type="reset">
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<footer>
+  <img src="../Ventas/images/logo.png" class="rounded mx-auto d-block img-fluid" alt="Responsive image">
+</footer>
+
+  <script src="../luiiisa/js/jquery-3.2.1.min.js"></script>
+  <script src="../luiiisa/js/popper.js"></script>
+  <script src="../luiiisa/js/bootstrap.min.js"></script>
+  <script src="../Ventas/js/sweetalert.min.js"></script>
+  <script src="../Ventas/js/main.js"></script>
+  <script src="../Ventas/js/table.js"></script>
+</body>
+</html>

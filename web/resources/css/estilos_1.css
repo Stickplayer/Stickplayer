@@ -1,0 +1,280 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
+}
+body{
+	flex-wrap: wrap;
+	background-color: #1c1c1c;
+}
+#panel2{
+	width:100%;
+	height:300px;
+	background: #c1c1c1; 
+	padding: 20px;
+	margin-top: 28px;
+	margin-bottom: 40px;
+	display: flex;
+box-shadow:inset 0 0 20px #1c1c1c;
+}
+.col{
+	width: 40%;
+	height: 260px;
+	background-image: url(../imagenes/metal.jpg); 
+	padding: 20px;
+	margin-top: 2px;
+	background-size: 100% 100%;
+}
+#panel2{
+	text-align: center;
+	overflow: hidden;
+}
+.titulo {
+    background-image: url(../imagenes/dest.jfif);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 400px;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.titulo1 {
+    background-color: rgba(0,0,0,.5);
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo h1 {
+    color: #c1c1c1;
+    font-size: 7em;
+    margin: 0;
+    margin-top: 100px;
+/*    font-family: "Tahoma";*/
+}
+.subtitulo{
+	margin-left: 10px;
+    width: 25%;
+    justify-content: flex-end;
+}
+.spa1{
+	width: 100%;
+	height: 20px;
+}
+header{
+	width: 100%;
+background: #1c1c1c;
+ }
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+
+.menu ul{
+	margin:0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.menu ul{
+	flex-grow: 1;
+}
+
+.menu li:hover{
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	background-color:rgba(93,194,30, .3) ;
+	transition: .1s;
+}
+
+.menu li a {
+	display: block;
+	padding: 15px 20px;
+	color: #5dc21e;
+	text-decoration: none; 
+}
+
+.con{
+	width: 100%;
+background:#5dc21e;
+}
+
+#btn-meniu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+
+.meniu ul{
+	margin:0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	box-shadow:inset 0 0 10px #1c1c1c;
+	margin-top: 100px;
+}
+
+.meniu ul{
+	flex-grow: 1;
+}
+
+.meniu li:hover{
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	background-color:rgba(93,194,30, .3) ;
+	transition: .3s;
+}
+
+.meniu li a {
+	display: block;
+	padding: 15px 20px;
+	color: #5dc21e ;
+	text-decoration: none;
+}
+#logo{
+	width: 247px;
+	height: 60px;
+	background-image: url(../imagenes/logo.png);
+	margin-right: 20px;
+}
+.creador{
+	margin: 0;
+    width: 25%;
+    justify-content: flex-end;
+}
+.img{
+	width: 40%;
+	height: 260px;
+	background-image: url(../imagenes/god.jpg); 
+	padding: 20px;
+	margin-top: 2px;
+	background-size: 100% 100%;
+
+}
+.img1{
+	width: 40%;
+	height: 260px;
+	background-image: url(../imagenes/maxresdefault.jpg); 
+	padding: 20px;
+	margin-top: 2px;
+	background-size: 100% 100%;
+}
+.img2{
+	width: 40%;
+	height: 260px;
+	background-image: url(../imagenes/Hanzo-And-Genji-Overwatch-Heroes-HD-Wallpaper.jpg); 
+	padding: 20px;
+	margin-top: 2px;
+	background-size: 100% 100%;
+
+}
+.paginas{
+	width: 100%;
+	height: 50px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.boton{
+	border: none;
+    background-color: rgba(193, 193, 193,.2);
+    border: 3px solid #1c1c1c;
+    color: #848484;
+    padding: 3px 12px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 30px;k
+ 
+}
+.boton:hover {
+    background-color: #c1c1c1;
+    transition: .3s;
+}
+.espacio{
+	width: 100%;
+	height: 20px;
+}
+.espacio1{
+	width: 100%;
+	height: 60px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	background-color: #1c1c1c;
+	margin-top: 0px;
+}
+.boton1{
+	border: none;
+    background-color: rgba(0,0,0,.2);
+    border: 3px solid #000;
+    color: #000;
+    padding: 7px 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.boton1:hover {
+    background-color: #5dc21e;
+    transition: .3s;
+}
+.vero{
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 7px;
+	background-color: rgba(0,0,0,.2);
+	color: #1c1c1c;
+	border: 2px solid #1c1c1c; 
+	padding:1px 60px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	margin-left: 45px;
+	margin-top: 0px;
+}
+
+.vero:hover{
+	background-color: rgba(93,194,30,.40);
+	transition: .2s;
+}
+.vero1{
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 7px;
+	background-color: rgba(0,0,0,.2);
+	color: #5dc21e ;
+	border: 2px solid #5dc21e ; 
+	padding:1px 60px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	margin-left: 45px;
+	margin-top: 0px;
+}
+
+.vero1:hover{
+	background-color: rgba(93,194,30,.20);
+	transition: .2s;
+}

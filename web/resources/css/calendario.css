@@ -1,0 +1,152 @@
+*{
+	padding: 0px;
+	margin: 0px;
+	background-color: #c1c1c1
+	box-sizing: border-box;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+header{
+background: #1c1c1c;
+ }
+
+.navbar ul{
+	justify-content: center;
+	flex-grow: 1;
+	margin: none;
+}
+
+.navbar li:hover{
+	font-size: 23px;
+	cursor: pointer;
+	position: relative;
+	transition: .6s;
+	margin: none;
+	border: none;
+}
+
+.navbar li a {
+	display: block;
+	color: #5dc21e;
+	margin-left: 10px;
+	text-decoration: none; 
+}
+
+.footer-bs {
+	color: #5dc21e;
+    background-color: #1c1c1c;
+	padding: 60px 40px;
+}
+
+.foote{
+	background-color: #5dc21e;
+}
+
+.footer-bs .footer-nav h4{
+	font-size: 21px;
+	margin-top: 30px;
+	color: #5dc21e;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.footer-bs .footer-nav ul.list{ 
+	list-style:none; padding:0px; 
+}
+
+.footer-bs .footer-nav ul.list li{ 
+	padding:4px;
+}
+
+.footer-bs .footer-nav ul.list a{ 
+	color:rgba(255,255,255,0.80); 
+}
+
+.footer-bs .footer-nav ul.list a:hover{ 
+	color:rgba(255,255,255,0.60); text-decoration:none; 
+}
+
+.footer-bs .footer-social ul{ 
+	list-style:none; padding:0px;
+}
+
+.footer-bs .footer-social h4{
+	font-size: 21px;
+	margin-top: 30px;
+	color: #5dc21e;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+}
+
+.footer-bs .footer-social li{ 
+	padding:4px;
+}
+.footer-bs .footer-social a{ 
+	color:rgba(255,255,255,0.80); 
+}
+
+.footer-bs .footer-social a:hover{ 
+	color:rgba(255,255,255,0.60); text-decoration:none; 
+}
+
+h1.title {
+	padding: 30px;
+	font-weight: 800;
+}
+	
+.calendar {
+	margin: 40px;
+}
+
+[data-toggle="calendar"] > .row > .calendar-day {
+	width: 14.28571428571429%;
+	background-color: #c1c1c1;
+	box-shadow:inset 0 0 5px #1c1c1c;
+	padding: 3px;
+	border: 1px solid #1c1c1c;
+	min-height: 120px;
+}
+
+[data-toggle="calendar"] > .row > .calendar-day.calendar-no-current-month {
+	color: white;
+}
+
+.boton1{
+	border-radius: 5px;
+	background-color: rgba(0,0,0, .2);
+	color: #1c1c1c;
+	border: 1px solid #1c1c1c; 
+	padding:1px 20px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.boton1:hover{
+	background-color:rgba(93,194,30, .2) ;
+	transition: .2s;
+}
+
+.btn-group{
+	padding: 30px;
+}
+
+.boton2{
+	border-radius: 5px;
+	background-color: rgba(0,0,0, .2);
+	color: #1c1c1c;
+	border: 1px solid #1c1c1c; 
+/*	padding:1px 20px;*/
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 20px;
+	padding: 10px;
+}
+
+.boton2:hover{
+	background-color:rgba(93,194,30, .2) ;
+	transition: .2s;
+}

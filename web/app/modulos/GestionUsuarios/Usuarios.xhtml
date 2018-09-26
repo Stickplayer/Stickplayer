@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Administrador</title>
+  <link rel="stylesheet" type="text/css" href="../luiiisa/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../Ventas/css/table.css">
+  <link rel="stylesheet" href="../Ventas/css/sweetalert.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  <header id="menu1">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button><a href="Inicio_Administrador.html">
+      <img src="../Ventas/images/logo.png" class="rounded mx-auto d-block img-fluid" alt="Responsive image"></a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="Inicio_Administrador.html">volver al inicio</a>
+            <li class="nav-item ">
+                <a class="nav-link" href="Pedidos.html">Pedidos</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="Mantenimiento.html">Mantenimiento</a>
+                
+              </li>
+          <li class="nav-item ">
+                <a class="nav-link" href="factura_Pedido.html">Facturas</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="proveedoress.html">Proveedores</a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link " href="Producto.html">Inventario</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../acerca de nosotros.html">Graficas</a>
+            </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Perfil.html">Editar Perfil</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  </header>
+
+
+<div class="container">
+  <div class="row">
+
+    <section class="content">
+      <h1>Usuarios</h1>
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="pull-right">
+              <div class="btn-group mr-2" role="group" aria-label="First group">
+                <button type="button" class="btn btn-outline-primary btn-filter" data-target="all">Todos</button>
+                <button type="button" class="btn btn-outline-success btn-filter" data-target="pagado">Clientes</button>
+                <button type="button" class="btn btn-outline-warning btn-filter" data-target="pendiente">Empleados</button>
+              </div>
+              <div class="input-group">
+                <form action="#" method="get">
+                  <div class="input-group">
+                    <button type="submit" class="btn btn-outline-dark">Buscar</button>
+                    <input class="form-control" id="system-search" name="q" placeholder="" required>
+                    <span class="input-group-btn"> 
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+
+            <div class="container ">
+              <table class="table table-responsive table-list-search table table-responsive-lg">
+                <thead>
+          <th>Id Usuario</th>
+          <th>Codigo</th>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Segundo apellido</th>
+          <th>Fecha de nacimiento</th>
+          <th>Genero</th>
+          <th>E_mail</th>
+          <th>Telefono</th>
+          <th>Celular</th>          
+          <th>Eliminar</th>
+          <th>Copiar</th>
+<!--           <th>Editar</th> -->
+          <th>Crear</th>
+        </thead>
+                <tbody>
+                 <tr data-status="pagado">
+                   <td>309678</td>
+                      <td>226566</td>
+                      <td>Roberto</td>
+                      <td>Gonzales</td>
+                      <td>Prieto</td>
+                      <td>Masculino</td>
+                      <td>Roberto12@gmail.com</td>
+                      <td>20335678</td>
+                      <td>33333334</td>
+                      <td>3455666</td>
+                      <td><button class="btn btn-xs btn-outline-danger delete">
+                            <i class="material-icons">delete_forever</i>
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-xs btn-outline-warning clone">
+                            <i class="material-icons">content_copy</i>
+                        </button>
+                      </td>
+<!--                      <td>
+                        <button class="btn btn-xs btn-outline-primary edit">
+                            <i class="material-icons">mode_edit</i>
+                        </button>
+                      </td> -->
+                      <td>
+                        <button class="btn btn-xs btn-outline-success add">
+                            <i class="material-icons">note_add</i>
+                        </button>
+                      </td>
+                  </tr>
+                  <tr data-status="pagado">
+                   <td>323434</td>
+                      <td>987643</td>
+                      <td>Maria</td>
+                      <td>Martinez</td>
+                      <td>Peña</td>
+                      <td>Femenino</td>
+                      <td>mari2312@gmail.com</td>
+                      <td>39483923</td>
+                      <td>44422345</td>
+                      <td>4567764</td>
+                      <td><button class="btn btn-xs btn-outline-danger delete">
+                            <i class="material-icons">delete_forever</i>
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-xs btn-outline-warning clone">
+                            <i class="material-icons">content_copy</i>
+                        </button>
+                      </td>
+<!--                      <td>
+                        <button class="btn btn-xs btn-outline-primary edit">
+                            <i class="material-icons">mode_edit</i>
+                        </button>
+                      </td> -->
+                      <td>
+                        <button class="btn btn-xs btn-outline-success add">
+                            <i class="material-icons">note_add</i>
+                        </button>
+                      </td>
+                  </tr>
+                  <tr data-status="pagado">
+                   <td>554324</td>
+                      <td>245643</td>
+                      <td>john</td>
+                      <td>Martin</td>
+                      <td>Perez</td>
+                      <td>Masculino</td>
+                      <td>jmartin@gmail.com</td>
+                      <td>34565456</td>
+                      <td>88776543</td>
+                      <td>7654323</td>
+                      <td><button class="btn btn-xs btn-outline-danger delete">
+                            <i class="material-icons">delete_forever</i>
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-xs btn-outline-warning clone">
+                            <i class="material-icons">content_copy</i>
+                        </button>
+                      </td>
+<!--                      <td>
+                        <button class="btn btn-xs btn-outline-primary edit">
+                            <i class="material-icons">mode_edit</i>
+                        </button>
+                      </td> -->
+                      <td>
+                        <button class="btn btn-xs btn-outline-success add">
+                            <i class="material-icons">note_add</i>
+                        </button>
+                      </td>
+                  </tr>
+
+                  <tr data-status="pendiente">
+                    <td>344443</td>
+                      <td>6674232</td>
+                      <td>Carlos</td>
+                      <td>Diaz</td>
+                      <td>Lopez</td>
+                      <td>Masculino</td>
+                      <td>cardiaz13@gmail.com</td>
+                      <td>34677765</td>
+                      <td>88765446</td>
+                      <td>5677776</td>
+                      <td><button class="btn btn-xs btn-outline-danger delete">
+                            <i class="material-icons">delete_forever</i>
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-xs btn-outline-warning clone">
+                            <i class="material-icons">content_copy</i>
+                        </button>
+                      </td>
+<!--                      <td>
+                        <button class="btn btn-xs btn-outline-primary edit">
+                            <i class="material-icons">mode_edit</i>
+                        </button>
+                      </td> -->
+                      <td>
+                        <button class="btn btn-xs btn-outline-success add">
+                            <i class="material-icons">note_add</i>
+                        </button>
+                      </td>
+                  </tr>
+                  <tr data-status="cancelado">
+                    <td>564642</td>
+                      <td>2345664</td>
+                      <td>Johana</td>
+                      <td>Palencia</td>
+                      <td>Contreras</td>
+                      <td>Femenino</td>
+                      <td>contreras65@gmail.com</td>
+                      <td>34532334</td>
+                      <td>66644343</td>
+                      <td>3345675</td>
+                      <td><button class="btn btn-xs btn-outline-danger delete">
+                            <i class="material-icons">delete_forever</i>
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-xs btn-outline-warning clone">
+                            <i class="material-icons">content_copy</i>
+                        </button>
+                      </td>
+<!--                      <td>
+                        <button class="btn btn-xs btn-outline-primary edit">
+                            <i class="material-icons">mode_edit</i>
+                        </button>
+                      </td> -->
+                      <td>
+                        <button class="btn btn-xs btn-outline-success add">
+                            <i class="material-icons">note_add</i>
+                        </button>
+                      </td>
+                  </tr>
+                  <tr data-status="pagado" class="selected">
+                    <td>346567</td>
+                      <td>283456</td>
+                      <td>Johnatan</td>
+                      <td>Zuruaga</td>
+                      <td>Niño</td>
+                      <td>Masculino</td>
+                      <td>Johnatanzn34@gmail.com</td>
+                      <td>34657687</td>
+                      <td>49586788</td>
+                      <td>2647368</td>
+                      <td><button class="btn btn-xs btn-outline-danger delete">
+                            <i class="material-icons">delete_forever</i>
+                        </button>
+                      </td>
+                      <td>
+                        <button class="btn btn-xs btn-outline-warning clone">
+                            <i class="material-icons">content_copy</i>
+                        </button>
+                      </td>
+<!--                      <td>
+                        <button class="btn btn-xs btn-outline-primary edit">
+                            <i class="material-icons">mode_edit</i>
+                        </button>
+                      </td> -->
+                      <td>
+                        <button class="btn btn-xs btn-outline-success add">
+                            <i class="material-icons">note_add</i>
+                        </button>
+                      </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>        
+    </section>
+  </div>
+</div>
+
+<footer>
+  <img src="../Ventas/images/logo.png" class="rounded mx-auto d-block img-fluid" alt="Responsive image">
+</footer>
+
+  <script src="../luiiisa/js/jquery-3.2.1.min.js"></script>
+  <script src="../luiiisa/js/popper.js"></script>
+  <script src="../luiiisa/js/bootstrap.min.js"></script>
+  <script src="../Ventas/js/sweetalert.min.js"></script>
+  <script src="../Ventas/js/main.js"></script>
+  <script src="../Ventas/js/table.js"></script>
+</body>
+</html>

@@ -1,0 +1,193 @@
+body{
+margin: 0px;
+padding: 0px;
+background-color: #1c1c1c;
+font-family: 'Titillium Web', sans-serif;
+box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+background: #c1c1c1;
+ }
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+
+.menu ul{
+	margin:0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+		box-shadow:inset 0 0 10px #1c1c1c;
+}
+
+.menu ul{
+	flex-grow: 1;
+}
+
+.menu li:hover{
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	background-color:rgba(0,0,0, .3) ;
+	transition: .1s;
+}
+
+.menu li a {
+	display: block;
+	padding: 15px 20px;
+	color: #1c1c1c;
+	text-decoration: none; 
+}
+
+.con{
+	width: 100%;
+background:#5dc21e;
+}
+
+#btn-meniu{
+	display: none;
+}
+
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border-right: 1px solid #fff;
+}
+
+.meniu ul{
+	margin:0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.meniu ul{
+	flex-grow: 1;
+}
+
+.meniu li:hover{
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	background-color:rgba(0,0,0, .3) ;
+	transition: .1s;
+}
+
+.meniu li a {
+	display: block;
+	padding: 15px 20px;
+	color: #1c1c1c;
+	text-decoration: none;
+}
+.spa{
+	width: 100%;
+	height: 30px;
+	margin-top: 100px;
+}
+
+
+form{
+	background-color: #1c1c1c;
+	width: 500px;
+	height: 1010px;
+	border: 2px solid #c1c1c1 ;
+	border-radius: 10px;
+	box-shadow:inset 0 0 20px #c1c1c1;
+	margin: 60px auto;
+}
+form h1{
+	text-align: center;
+	color: #c1c1c1 ;
+	font-size: 30pt;
+	margin: 30px 40px;
+}
+.nombre{
+width: 280px;
+height: 35px;
+padding: 0px 10px;
+margin: 10px 100px;
+color: #1c1c1c;
+text-align: center;
+border-radius: 7px;
+}
+.num1{
+	width: 280px;
+	height: 150px;
+	padding: 0px 10px;
+	margin: 10px 100px;
+	color: #1c1c1c;
+	border-radius: 7px;
+}
+#vero{
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 7px;
+	background-color: rgba(0,0,0,.2);
+	color: #5dc21e;
+	border: 2px solid #5dc21e; 
+	padding:1px 50px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	margin-left: 60px;
+	margin-top: 10px;
+}
+
+#vero:hover{
+	background-color:rgba(93,194,30, .2) ;
+	transition: .1s;
+}
+#very{
+	font-family: 'Titillium Web', sans-serif;
+	border-radius: 7px;
+	background-color: rgba(0,0,0,.2);
+	color: #5dc21e;
+	border: 2px solid #5dc21e; 
+	padding:1px 60px;
+	font-size: 20px;
+	cursor: pointer;
+	position: relative;
+	margin-left: 100px;
+	margin-top: 50px;
+}
+
+#very:hover{
+	background-color:rgba(93,194,30, .2) ;
+	transition: .1s;
+}
+p{
+	font-size: 15px;
+	margin-top: 5px;
+	margin-left: 64px;
+	margin-bottom: 0px;
+	color: #c1c1c1 ;
+}
+
+#logo{
+	width: 247px;
+	height: 60px;
+	background-image: url(../imagenes/logo.png);
+	margin-right: 20px;
+}
+
+#logo1{
+	width: 304px;
+	height: 80px;
+	background-image: url(../images/logo1.png);
+	margin-top: 30px;
+	margin-left: 80px;
+}

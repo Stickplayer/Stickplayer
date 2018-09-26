@@ -1,0 +1,393 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <f:view locale="#{sessionController.language}">
+        <h:head>
+            <meta charset="UTF-8"/>
+            <title>Stickplayer</title>
+            <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+            <link rel="stylesheet" type="text/css" href="#{request.contextPath}/resources/css/bootstrap.min.css"/>
+            <link rel="stylesheet" type="text/css" href="#{request.contextPath}/resources/css/index.css"/>
+            <link rel="stylesheet" type="text/css" href="#{request.contextPath}/resources/css/sweetalert2-master/dist/sweetalert2.min.css"/>
+            <link rel="stylesheet" type="text/css" href="#{request.contextPath}/resources/css/css.css"/>
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"/>
+        </h:head>
+
+        <h:body>
+            <div class="contenedor">
+                <header id="menus">
+                    <div class="titulo">
+                        <img src="#{request.contextPath}/resources/img/Sirepng.png" class="rounded mx-auto d-block img-fluid" alt="Responsive image"/>
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn boton" data-toggle="modal" data-target="#login">#{txtStickplayer.IniciarSesion}</button>
+                            <button type="button" class="btn boton" data-toggle="modal" data-target="#signup">#{txtStickplayer.Registrarse}</button>
+                        </div>
+                    </div>
+                </header>
+            </div>
+
+            <header id="menu1">
+                <nav class="navbar navbar-expand-lg navbar-dark ">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="Ventas/Ventas_Juegos.html">#{txtStickplayer.Juegos}</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                    <a class="nav-link" href="Foro/Foro.html">Foro</a>
+                    </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link " href="modulo mantenimiento/index.html">#{txtStickplayer.Mantenimiento}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="Ventas/Ventas_Accesorios.html">#{txtStickplayer.Accesorios}</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="acerca de nosotros.html">#{txtStickplayer.AcercaDeNosotros}</a>
+                            </li>
+                        </ul>
+
+                        <!--Buscador de elementos
+                         <form action="" class="search-form">
+                          <div class="custom-search">
+                            <input type="text" class="form-control" placeholder="Buscar">
+                          </div>
+                        </form> 
+                        Fin buscador de elementos-->
+
+                    </div>
+                </nav>
+            </header>
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><a href="Ventas/Comprar_Stormblood Fina Fantasy XIV.html"><img class="d-block w-100" src="#{request.contextPath}/resources/img/zlrKxk9hFFXIVCE_1140x400_1140_KR.jpg" height="500" alt="First slide responsive-image"/></a>
+
+                    </div>
+                    <div class="carousel-item"><a href="Ventas/Comprar_Aven Colony.html">
+                            <img class="d-block w-100" src="#{request.contextPath}/resources/img/Aven-portada.jpg" height="500" alt="Second slide responsive-image"/></a>
+                    </div>
+                    <div class="carousel-item"><a href="Ventas/Comprar_Megaman Legancy Collecion.html">
+                            <img class="d-block w-100" src="#{request.contextPath}/resources/img/MegaManLegacyCollection2Art.jpg" height="500" alt="Third slide responsive-image"/></a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <div class="container-fluid ren">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 mr-auto juego">
+                        <img src="#{request.contextPath}/resources/img/batlef.png" class="rounded mx-auto d-block img-fluid" alt="Responsive image"/>
+                    </div>
+                    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 mr-auto descripcion">
+                        <h4>Battlefield</h4>
+                        <p>Descubre la guerra total.
+                            <br></br>
+                            Battlefield te lleva hasta la Primera Guerra Mundial, donde nueva tecnología y un conflicto a nivel mundial cambiaron la guerra para siempre. Participa en cada batalla, controla cada enorme vehículo y ejecuta cada maniobra que transforma por completo un combate. 
+                            <br></br>
+                            El mundo entero está en guerra: checa qué hay tras las trincheras.
+                        </p><a href="Ventas/compra batlefield.html">
+                            <br></br>
+                            <button class="btn boton2">#{txtStickplayer.VerMás}</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+                <h1 class="text-center destacados">#{txtStickplayer.Destacados}</h1>
+                <div class="row">
+                    <div class="grid col-sm">
+                        <figure class="effect-oscar">
+                            <img src="#{request.contextPath}/resources/img/batlefield.png" class="img-fluid" alt="Responsive image"/>
+                            <figcaption>
+                                <h2>Battlefield</h2>
+                                <p>#{txtStickplayer.DisponiblePara}: Xbox one, Xbox 360</p>
+                                <a href="Ventas/compra batlefield.html">#{txtStickplayer.VerMás}</a>
+                            </figcaption>     
+                        </figure>
+                    </div>    
+                    <div class="grid col-sm ">
+                        <figure class="effect-oscar">
+                            <img src="#{request.contextPath}/resources/img/destiny.png" class="img-fluid" alt="Responsive image"/>
+                            <figcaption>
+                                <h2>Destiny</h2>
+                                <p>#{txtStickplayer.DisponiblePara}: Xbox one, Xbox 360</p>
+                                <a href="Ventas/Comprar_Destiny.html">#{txtStickplayer.VerMás}</a>
+                            </figcaption>     
+                        </figure>
+                    </div> 
+                    <div class="grid col-sm">
+                        <figure class="effect-oscar">
+                            <img src="#{request.contextPath}/resources/img/knack.png" class="img-fluid" alt="Responsive image"/>
+                            <figcaption>
+                                <h2>Knack 2</h2>
+                                <p>#{txtStickplayer.DisponiblePara}: Xbox one, Xbox 360</p>
+                                <a href="Ventas/Comprar_Knack 2.html">View more</a>
+                            </figcaption>     
+                        </figure>
+                    </div>  
+                    <div class="grid col-sm">
+                        <figure class="effect-oscar">
+                            <img src="#{request.contextPath}/resources/img/the-evil.png" class="img-fluid" alt="Responsive image"/>
+                            <figcaption>
+                                <h2>The evil within</h2>
+                                <p>#{txtStickplayer.DisponiblePara}: Xbox one, Xbox 360</p>
+                                <a href="Ventas/Comprar_The evil within.html">#{txtStickplayer.VerMás}</a>
+                            </figcaption>     
+                        </figure>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="jumbotron">
+                <h1 class="display-3">¿#{txtStickplayer.TuConsolaTieneAlgúnProblema}?</h1>
+                <p class="lead">#{txtStickplayer.NoTePreocupes}, #{txtStickplayer.AgendaUnaCitaySolucionaremosSuProblema}</p>
+                <hr class="my-4"/>
+                <a href="modulo mantenimiento/index.html"><button id="vero">#{txtStickplayer.AgendarCita}</button></a>
+            </div>
+
+
+            <section id="contact">
+                <div class="section-content ">
+                    <h1 class="section-header">#{txtStickplayer.DejaTuComentario}.</h1>
+                    <h3>#{txtStickplayer.TuOpiniónNosImportaMucho}, #{txtStickplayer.PorFavorDejaUnComéntanosComoTeParecióLaPagina}</h3>
+                </div>
+                <div class="contact-section ">
+                    <div class="container">
+                        <form>
+                            <div class="col-md ">
+                                <div class="form-group">
+                                    <label for="exampleInputUsername">#{txtStickplayer.Nombre}</label>
+                                    <input type="text" class="form-control" id="" placeholder=" #{txtStickplayer.NombreUsuario}"/>
+                                </div>
+                            </div>
+
+                            <div class="col-md">
+                                <div class="form-group">
+                                    <label for ="description">#{txtStickplayer.Comentario}</label>
+                                    <textarea  class="form-control" id="description" placeholder="#{txtStickplayer.EC}"></textarea>
+                                </div>
+
+                                <div>
+                                    <button type="button" class="btn btn-default submit boton2">#{txtStickplayer.SC}</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div id="logoFooter">
+                    <img src="#{request.contextPath}/resources/img/logo1.png" alt="Responsive image"/>
+                </div>
+                <div class="footer-bs">
+                    <div class="row">
+                        <div class="col-md-3 footer-nav fadeInUp">
+                            <h4>Menu</h4>  
+                            <ul class="list">
+                                <li><a href="#{request.contextPath}/app/acerca de nosotros.html" class="fa fa-space-shuttle">#{txtStickplayer.AcercaDeNosotros}</a></li>
+                                <li><a href="Ventas/Ventas_Juegos.html" class="fa fa-gamepad">#{txtStickplayer.Juegos}</a></li>
+                                <li><a href="modulo mantenimiento/index.html" class="fa fa-laptop">#{txtStickplayer.Mantenimiento}</a></li>
+                                <li><a href="Ventas/Ventas_Accesorios.html" class="fa fa-audio-description">#{txtStickplayer.Accesorios}</a></li>
+                                 <li class="nav-item">
+                                <h:form prependId="false">
+                                    <h:commandLink class="nav-link  fa fa-language" action="#{sessionController.changeLanguage('es')}">
+                                        #{txtStickplayer.Espanol}
+                                    </h:commandLink>
+                                </h:form>
+                            </li>
+                            <li class="nav-item">
+                                <h:form prependId="false">
+                                    <h:commandLink class="nav-link fa fa-language" action="#{sessionController.changeLanguage('en')}">
+                                        #{txtStickplayer.Ingles}
+                                    </h:commandLink>
+                                </h:form>
+                            </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6 fadeInLeft text-center">
+                            <p>COLOMBIA-BOGOTA. TRANSVERSAL 77 J # 69-11 SUR BOSA SAN PABLO II</p>
+                            <p>Números: 7753882 - 7827634 - 7822499 - 7190330</p>
+                            <p>Stickplayer es un proyecto creado para la pyme Inversiones GAGA SAS</p>
+                            <p>Inversiones GaGa S.A.S © 2018 Stickplayer -  versión 2.0</p>
+                        </div>
+
+                        <div class="col-md-3 footer-social animated fadeInDown text-center">
+                            <h4>Siguenos</h4>
+                            <ul class="social-network social-circle">
+                                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#" class="icoGoogle" title="Google +"><i class="fab fa-google-plus"></i></a></li>
+                            </ul>       
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+            <!--Template modal-->
+            <!-- Modal Inicio Sesión -->
+            <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesión</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">X</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group">  
+                                <label for="correo">Correo Electrónico</label>
+                                <input id="correo" name="correo" type="email" placeholder="EXAMPLE@GMAIL.COM" class="form-control"/>
+                            </div>
+
+                            <div class="form-group"> 
+                                <label for="pass">Contraseña</label>
+                                <input id="pass" name="id" type="password" placeholder="Digite su contraseña" class="form-control"/>
+                            </div>
+
+                        </div>
+                        <div class="modal-footer">
+                            <button  onclick="validacion()" type="submit" class="btn btn-dark btn-block justify-content-center">#{txtStickplayer.IniciarSesion}</button> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /Modal Inicio Sesión -->
+
+            <!-- Modal registro-->
+            <div class="modal fade" id="signup" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">#{txtStickplayer.Registrarse}</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">X</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form id="defaultForm" method="post" class="form-horizontal">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class=" control-label">#{txtStickplayer.Nombre}</label>
+                                        <input type="text" class="form-control" name="firstName" placeholder="Nombre" required="true" />
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label class=" control-label">Apellido</label>
+                                        <input type="text" class="form-control" name="lastName" placeholder="Apellido" required="true" />
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Nickname</label>
+                                        <input type="text" class="form-control" name="username" placeholder="yolo132" required="true" />
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Nombre de usuario</label>
+                                        <input type="text" class="form-control" name="username" disabled="true" />
+                                    </div>
+                                </div>
+
+                                <div class="form-group ">
+                                    <label class="control-label">Correo electronico</label>
+                                    <input type="text" class="form-control" name="email" placeholder="example@email.com" required="true" />
+                                </div>
+
+
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Contraseña</label>
+                                        <input type="password" class="form-control" name="password" placeholder="Digite su contraseña" required="true" />
+                                    </div>
+
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Confirmar la contraseña</label>
+                                        <input type="password" class="form-control" name="password"  placeholder="Vuelvala a digitar" required="true" />
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <label class="control-label">Genero</label>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="gender" value="Hombre" required="true" /> Mujer
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="gender" value="Mujer" required="true" /> Hombre
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- 
+                                        <div class="form-group col-md-6">
+                                                  <div class="form-group">
+                                                <label class="col-sm-3 control-label" id="captchaOperation"></label>
+                                                <div class="col-sm-2">
+                                                  <input type="text" class="form-control" name="captcha" />
+                                                </div>
+                                              </div>
+                                              </div> -->
+
+                                </div>
+
+                                <div class="">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="agree" value="agree" required="true" /> Acepto <a href="#" target="_blank">terminos</a> y condiciones
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+
+                            <button type="submit" class="btn btn-dark btn-block" name="signup" value="Sign up">#{txtStickplayer.Registrarse}</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal Registro -->
+
+            <!--/Template modal-->
+
+            <script src="#{request.contextPath}/resources/js/jquery-3.2.1.min.js"></script>
+            <script src="#{request.contextPath}/resources/js/popper.js"></script>
+            <script src="#{request.contextPath}/resources/js/bootstrap.min.js"></script>
+            <script src="#{request.contextPath}/resources/js/sweetalert2-master/dist/sweetalert2.all.js"></script>
+            <script src="#{request.contextPath}/resources/js/js/batlefiel.js"></script>
+            <script src="#{request.contextPath}/resources/js/js/scripts.js"></script>
+            <script src="#{request.contextPath}/resources/js/validationForRegister.js"></script>
+        <!--        <script src="#{request.contextPath}/resources/js/agendamiento3.js" type="text/javascript"></script>-->
+
+        </h:body>
+    </f:view>
+</html>
